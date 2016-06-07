@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>addToMenu</key>
+	<array>
+		<dict>
+			<key>path</key>
+			<string>copy_smoothness.py</string>
+			<key>preferredName</key>
+			<string>Copy Smoothness</string>
+			<key>shortKey</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>developer</key>
+	<string>Typefounding</string>
+	<key>developerURL</key>
+	<string>http://www.typefounding.com</string>
+	<key>html</key>
+	<false/>
+	<key>launchAtStartUp</key>
+	<integer>0</integer>
+	<key>mainScript</key>
+	<string></string>
+	<key>name</key>
+	<string>Copy Smoothness</string>
+	<key>timeStamp</key>
+	<real>1606068959.091691</real>
+	<key>version</key>
+	<string>1.0</string>
+	<key>com.robofontmechanic.Mechanic</key>
+	<dict>
+	  <key>repository</key>
+	  <string>typefounding/copySmoothness</string>
+	  <key>summary</key>
+	  <string>Copies point smoothness from one font to another font(s) if glyphs are interpolatable.</string>
+	</dict>
+</dict>
+</plist>
