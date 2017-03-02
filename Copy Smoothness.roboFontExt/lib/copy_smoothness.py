@@ -41,19 +41,23 @@ class CopySmoothness:
                     if dest.isCompatible(g, report=False):
                         changed = False
                         index = 0
+                        dest.prepareUndo('Copy smoothness')
                         for c in g:
                             types = []
                             for p in c.points:
                                 types.append(p.smooth)
                             i = 0
                             for p in dest[index].points:
-                                if p.smooth != types[i]:
+                                if p.smooth != types[i] and p.type != "offCurve":
                                     p.smooth = types[i]
                                     changed = True
                                 i += 1
                             index += 1
                         if changed:
-                            dest.mark = NSColorToRgba(self.mark)
+                            if mark == 1:
+                                dest.mark = NSColorToRgba(self.mark)
+                            dest.update()
+                        dest.performUndo()
 
     def markCallback(self, sender):
         self.doMarkGlyphs = sender.get()

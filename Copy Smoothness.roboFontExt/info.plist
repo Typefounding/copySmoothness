@@ -26,9 +26,9 @@
 	<key>name</key>
 	<string>Copy Smoothness</string>
 	<key>timeStamp</key>
-	<real>1606068959.091691</real>
+	<real>1706068959.091691</real>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>com.robofontmechanic.Mechanic</key>
 	<dict>
 	  <key>repository</key>
