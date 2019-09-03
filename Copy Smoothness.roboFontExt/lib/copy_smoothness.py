@@ -38,7 +38,7 @@ class CopySmoothness:
             for g in source_font:
                 if g.name in font.keys():
                     dest = font[g.name]
-                    if dest.isCompatible(g, report=False):
+                    if dest.isCompatible(g):
                         changed = False
                         index = 0
                         dest.prepareUndo('Copy smoothness')
